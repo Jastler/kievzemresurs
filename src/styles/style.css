@@ -1,0 +1,215 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v5.0.1 | 20191019
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+  margin: 0 auto;
+}
+
+menu, ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.nav__logo {
+  width: max-content;
+  margin: 10px 0;
+}
+.nav__list {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.nav__item {
+  align-self: center;
+}
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #000;
+  font-size: 1em;
+  position: relative;
+  transition: all 0.6s;
+}
+.nav__link:before {
+  content: "";
+  width: 0;
+  height: 0.1em;
+  position: absolute;
+  bottom: 0;
+  bottom: -5px;
+  left: 50%;
+  background-color: #609d9f;
+  transition: all 0.3s;
+}
+.nav__link:hover {
+  color: #609d9f;
+}
+.nav__link:hover:before {
+  width: 100%;
+  left: 0;
+  background-color: #609d9f;
+}
+.nav__phone {
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  font-size: 1em;
+  background-color: #a0c4c5;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+.nav__phone:hover {
+  background-color: #609d9f;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav__logo {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2px 0;
+  }
+  .nav__img {
+    width: 40px;
+  }
+  .nav__burger {
+    align-self: center;
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    padding: 70px 0;
+    background-color: rgba(69, 77, 77, 0.8);
+    transition: top 0.3s ease;
+  }
+  .nav__list_active {
+    top: 0;
+  }
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.burger {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  z-index: 3;
+}
+.burger__line {
+  position: absolute;
+  background-color: #000;
+  left: -10px;
+  width: 100%;
+  height: 2px;
+  top: 9px;
+  transition: transform 0.2s linear;
+}
+.burger::before, .burger::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: -10px;
+  transition: transform 0.2s linear;
+}
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger_active .burger__line {
+  transform: scale(0);
+}
+.burger_active::before {
+  transform: rotate(45deg);
+  top: 9px;
+}
+.burger_active::after {
+  transform: rotate(-45deg);
+  bottom: 9px;
+}
+@media screen and (min-width: 1026px) {
+  .burger {
+    display: none;
+  }
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=style.css.map */
