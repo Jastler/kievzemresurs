@@ -1,0 +1,56 @@
+.form {
+  display: flex;
+  flex-direction: column;
+
+  &__input {
+    box-sizing: border-box;
+    width: 500px;
+    height: 70px;
+    margin: 15px 0;
+    color: $nav-color;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+
+    &::placeholder {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 18px;
+    }
+
+    &:focus::placeholder {
+      text-indent: -250px;
+      transition: text-indent 0.3s ease;
+    }
+
+    &:focus {
+      outline: none;
+      border: 1px solid $nav-color;
+      border-radius: 20px;
+    }
+  }
+
+  &__button {
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    
+    margin-top: 30px;
+    padding: 20px;
+    
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: $nav-color;
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+    
+    &:focus {
+      outline: none;
+      border: 1px solid black;
+      border-radius: 20px;
+    }
+  }
+}

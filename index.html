@@ -5,51 +5,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link rel="icon" href="./src/images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./src/styles/style.css">
   <title>Київземресурс</title>
 </head>
 <body>
   <header class="header">
-    <nav class="nav wrapper">
-      <div class="nav__logo">
-        <img class="nav__img "src="./src/images/logo.webp" alt="Logo">
-        <div class="burger nav__burger">
-          <span class="burger__line"></span>
+    <div class="header__bg"></div>
+    <div class="wrapper">
+      <nav class="nav">
+        <div class="nav__logo">
+          <img class="nav__img "src="./src/images/logo.png" alt="Logo">
+          <div class="burger nav__burger">
+            <span class="burger__line"></span>
+          </div>
         </div>
-      </div>
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#" class="nav__link">Головна</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Види робіт</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Наші клієнти</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Про нас</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Сертифікати</a>
-        </li>
-        <li class="nav__item">
-          <a href="#" class="nav__link">Контакти</a>
-        </li>
-        <li class="nav__item">  
-          <a href="#" class="nav__phone">Зв`язатись з нами</a> 
-        </li>
-      </ul>
-    </nav>
-    <div class="header__background">
-      <img class="header__img" src="./src/images/header_bg.jpg" alt="Природа">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Види робіт</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Зв`язатись з нами</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Про нас</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Контакти</a>
+          </li>
+          <li class="nav__item">  
+            <a href="tel:+380979806314" class="nav__phone">+380(97)980 63 14</a> 
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__heading">
+      <h1 class="header__title">
+        ТОВ «ГОЛОВЗЕМПРОЕКТ»
+      </h1>
+      <p class="header__info">
+        Головні принципи - надати якісно послугу, виконати вчасно роботу, з дотриманням вимог чинного земельного законодавства.
+      </p>
     </div>
   </header>
-  <section>
-    <h1>adskffsaasfl</h1>
+  <section class="section">
+    <h2 class="section__title">Наше підприємство виконує такі види робіт</h2>
+    <div class="services">
+      <div class="services__item">
+        <p class="services__text">Проект землеустрою щодо відведення земельної ділянки</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Технічна документація із землеустрою щодо встановлення (відновлення) меж земельної ділянки в натурі (на місцевості)</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Технічна документація із землеустрою щодо поділу та об'єднання земельних ділянок</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Технічна документація із землеустрою щодо встановлення меж частини земельної ділянки, на яку поширюється право суборенди, сервітуту</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Технічна документація із землеустрою щодо інвентаризації земель</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Топографо-геодезичні та картографічні роботи</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Виготовлення електронного XML-файлу</p>
+      </div>
+      <div class="services__item">
+        <p class="services__text">Надання консалтингових послуг з питань землеустрою</p>
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <h2 class="section__title">Зв`язатись з нами</h2>
+    <div class="feedback">
+      <img class="feedback__img" src="./src/images/feedback.png" alt="letter">
+      <form
+      class="form feedback__form"
+      action="https://formspree.io/f/xvovnlqj"
+      method="POST"
+      >
+        <label class="form__label">
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Ім'я"
+          >
+        </label>
+        <label class="form__label">
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="E-mail"
+          >
+        </label>
+        <label class="form__label">
+          <input
+            class="form__input"
+            type="tel"
+            name ="phone"
+            placeholder="Телефон*"
+            required
+          >
+        </label>
+        <button class="form__button" type="submit">Відправити</button>
+      </form>
+    </div>
   </section>
   <script src="./src/scripts/main.js"></script>
 </body>
 </html>
+
+
+<!-- sass --watch ./src/styles/main.scss ./src/styles/style.css -->

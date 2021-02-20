@@ -1,0 +1,15 @@
+.section {
+  background: white;
+
+  &:nth-child(odd) {
+    background-color: #eee;
+  }
+
+  &__title {
+    font-family: 'Russo One', sans-serif;
+    font-size: 32px;
+    margin: 20px auto;
+    padding: 30px 0;
+    width: max-content;
+  }
+}
