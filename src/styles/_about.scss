@@ -1,7 +1,6 @@
 .about {
   display: flex;
   justify-content: space-around;
-  width: 1300px;
   margin: 0 auto;
   padding-bottom: 80px;
 
@@ -25,8 +24,30 @@
   }
 
   &__img {
+    margin-left: 25px;
     max-width: 450px;
-    object-fit: cover;
     border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .about {
+
+    &__card {
+      margin: 0 15px;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 425px){
+  .about {
+
+    &__text {
+      font-size: 16px;
+    }
   }
 }

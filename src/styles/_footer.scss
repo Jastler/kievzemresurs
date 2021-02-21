@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: $nav-color;
+  height: 80px;
+
+  &__link {
+    color: black;
+  }
+}

@@ -1,9 +1,12 @@
 .nav {
-  background-color: rgba(0, 0, 0,0.4);
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0,0.7);
   display: flex;
   justify-content: space-between;
   padding: 0 15%;
-
+  z-index: 2;
   &__logo {
     position: relative;
     left: -150px;
@@ -73,6 +76,9 @@
 
 @media screen and (max-width: 1024px) {
   .nav {
+    position: static;
+    padding: 0 2%;
+
     &__logo {
       position: static;
       display: flex;

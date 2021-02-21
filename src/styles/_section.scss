@@ -16,6 +16,12 @@
   }
 }
 
+@media screen and (max-width: 768px){
+  .section__bg {
+    background: url('../images/nature-760039_1920.jpg');
+  }
+}
+
 @media screen and (max-width: 425px) {
   .section {
     &__title {

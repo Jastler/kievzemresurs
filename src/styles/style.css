@@ -20,7 +20,7 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline;
+  vertical-align: middle;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -116,10 +116,14 @@ table {
   }
 }
 .nav {
-  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: space-between;
   padding: 0 15%;
+  z-index: 2;
 }
 .nav__logo {
   position: relative;
@@ -183,6 +187,10 @@ table {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav {
+    position: static;
+    padding: 0 2%;
+  }
   .nav__logo {
     position: static;
     display: flex;
@@ -283,6 +291,11 @@ table {
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .section__bg {
+    background: url("../images/nature-760039_1920.jpg");
+  }
+}
 @media screen and (max-width: 425px) {
   .section__title {
     font-size: 28px;
@@ -443,7 +456,6 @@ table {
 .about {
   display: flex;
   justify-content: space-around;
-  width: 1300px;
   margin: 0 auto;
   padding-bottom: 80px;
 }
@@ -465,42 +477,61 @@ table {
   line-height: 1.6;
 }
 .about__img {
+  margin-left: 25px;
   max-width: 450px;
-  object-fit: cover;
   border-radius: 20px;
 }
 
+@media screen and (max-width: 768px) {
+  .about__card {
+    margin: 0 15px;
+  }
+  .about__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about__text {
+    font-size: 16px;
+  }
+}
 .contacts {
-  position: relative;
-  display: flex;
+  margin-bottom: 100px;
 }
 .contacts__info {
-  position: absolute;
-  top: 120px;
-  left: 20px;
-  background-color: #f8f8f8;
-  border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
   padding: 20px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 0 20px;
-  z-index: 1;
+}
+.contacts__text {
+  margin-right: 20px;
 }
 .contacts__icon {
   width: 30px;
-  margin: 0 15px;
 }
-.contacts__map {
-  box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
-  flex-grow: 2;
-  margin: 0 20px 100px;
+
+@media screen and (max-width: 768px) {
+  .contacts__info {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #609d9f;
+  height: 80px;
+}
+.footer__link {
+  color: black;
 }
 
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=style.css.map */
