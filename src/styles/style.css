@@ -279,7 +279,6 @@ table {
 .section__title {
   font-size: 42px;
   font-weight: 600;
-  margin: 20px auto;
   padding: 30px 10px;
   text-align: center;
 }
@@ -356,10 +355,11 @@ table {
     flex-direction: column;
     justify-content: center;
     width: 80%;
+    padding: 0 10%;
   }
   .feedback__img {
     text-align: center;
-    max-width: 300px;
+    width: 100%;
     margin-right: 0;
   }
 }
