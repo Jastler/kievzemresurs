@@ -133,6 +133,7 @@ table {
 }
 .nav__img {
   width: 60px;
+  height: auto;
 }
 .nav__list {
   display: flex;
