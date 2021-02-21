@@ -4,6 +4,11 @@
   justify-content: center;
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     position: relative;
     width: 400px;
     height: 200px;
@@ -21,15 +26,39 @@
     }
   }
 
+  &__img {
+    position: absolute;
+    top: 20px;
+    width: 30px;
+  }
+
   &__text {
     max-width: 400px;
-
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
 
     font-weight: 600;
     text-align: center;
     line-height: 1.5;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .services {
+    &__item {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    flex-wrap: nowrap;
+    overflow: scroll;
+    justify-content: stretch;
+
+    &__text {
+      font-size: 14px;
+      width: 300px;
+    }
+  }
+}
+
