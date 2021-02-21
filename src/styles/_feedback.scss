@@ -5,6 +5,7 @@
   padding: 40px 10%;
 
   &__img {
+    max-width: 400px;
     margin-right: 20px;
   }
 }
@@ -13,6 +14,7 @@
   .feedback {
     flex-direction: column;
     justify-content: center;
+    width: 80%;
 
     &__img {
       text-align: center;

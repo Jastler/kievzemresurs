@@ -5,8 +5,8 @@
   &__heading {
     position: absolute;
     top: 50%;
-    left: 40%;
-    transform: translateY(-50%);
+    left: 50%;
+    transform: translate(-50%,-50%);
     max-width: 970px;
     z-index: -1;
   }
@@ -37,10 +37,6 @@
 @media screen and (max-width: 1024px) {
   .header {
 
-    &__heading {
-      left: 5%;
-    }
-
     &__bg {
       background-position: center;
     }
@@ -48,11 +44,12 @@
     &__info {
       font-size: 24px;
       max-width: 850px;
+      text-align: center;
     }
 
     &__title {
       font-size: 36px;
-      
+      text-align: center;
     }
   }
 }
@@ -62,12 +59,11 @@
     height: 650px;
 
     &__info {
-      text-align: center;
+      
       font-size: 18px;
     }
     
     &__title {
-      text-align: center;
       font-size: 28px;
     }
   }

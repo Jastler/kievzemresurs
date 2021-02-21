@@ -1,11 +1,16 @@
 .form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: space-around;
+  width: 500px;
+
+  &__label {
+    width: 100%;
+  }
 
   &__input {
     box-sizing: border-box;
-    width: 500px;
+    width: 100%;
     height: 70px;
     margin: 15px 0;
     color: $nav-color;
@@ -42,6 +47,7 @@
 
     margin-top: 30px;
     padding: 20px;
+    max-width: 500px;
     
     border: 1px solid transparent;
     border-radius: 20px;
@@ -58,6 +64,7 @@
 
 @media screen and (max-width: 768px) {
   .form {
+    width: 100%;
     &__input {
       width: 100%;
       height: 50px;
@@ -69,9 +76,8 @@
     
     &__button {
       font-size: 14px;
-
-      margin-top: 15px;
-      padding: 15px;
+      margin: 10px auto;
+      padding: 15px 30px;
     }
   }
 }
