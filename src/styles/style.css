@@ -335,6 +335,7 @@ table {
     justify-content: stretch;
   }
   .services__text {
+    width: 300px;
     font-size: 14px;
   }
 }
@@ -359,7 +360,7 @@ table {
   .feedback__img {
     text-align: center;
     width: 100%;
-    height: auto;
+    height: 100%;
     margin-right: 0;
   }
 }
@@ -428,6 +429,10 @@ table {
   }
   .form__input::placeholder {
     font-size: 16px;
+  }
+  .form__input:focus::placeholder {
+    text-indent: -150px;
+    transition: text-indent 0.3s ease;
   }
   .form__button {
     font-size: 14px;

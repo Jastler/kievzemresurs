@@ -72,6 +72,11 @@
       &::placeholder {
         font-size: 16px;
       }
+
+      &:focus::placeholder {
+        text-indent: -150px;
+        transition: text-indent 0.3s ease;
+      }
     }
     
     &__button {
