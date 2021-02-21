@@ -336,7 +336,6 @@ table {
   }
   .services__text {
     font-size: 14px;
-    width: 300px;
   }
 }
 .feedback {
@@ -360,6 +359,7 @@ table {
   .feedback__img {
     text-align: center;
     width: 100%;
+    height: auto;
     margin-right: 0;
   }
 }
