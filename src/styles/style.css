@@ -285,12 +285,18 @@ table {
   background-color: #eee;
 }
 .section__title {
+  margin: 70px 0 30px;
   font-size: 42px;
   font-weight: 600;
   padding: 30px 10px;
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .section__title {
+    margin: 10px 0;
+  }
+}
 @media screen and (max-width: 768px) {
   .section__bg {
     background: url("../images/nature-760039_1920.jpg");
@@ -499,6 +505,8 @@ table {
   margin-bottom: 100px;
 }
 .contacts__info {
+  position: relative;
+  top: 5git0px;
   padding: 20px;
   display: flex;
   justify-content: center;

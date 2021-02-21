@@ -2,10 +2,11 @@
   margin-bottom: 100px;
 
   &__info {
+    position: relative;
+    top: 5git0px;
     padding: 20px;
     display: flex;
     justify-content: center;
-    
   }
 
   &__text {

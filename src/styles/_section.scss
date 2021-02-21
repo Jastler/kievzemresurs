@@ -9,10 +9,19 @@
   }
 
   &__title {
+    margin: 70px 0 30px;
     font-size: 42px;
     font-weight: 600;
     padding: 30px 10px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    &__title {
+      margin: 10px 0;
+    }
   }
 }
 
