@@ -341,6 +341,11 @@ table {
   text-align: center;
   line-height: 1.5;
 }
+.services__arrow {
+  display: none;
+  font-size: 25px;
+  margin: 0 auto 20px;
+}
 
 @media screen and (max-width: 1024px) {
   .services__item {
@@ -356,6 +361,9 @@ table {
   .services__text {
     width: 300px;
     font-size: 14px;
+  }
+  .services__arrow {
+    display: block;
   }
 }
 .feedback {
