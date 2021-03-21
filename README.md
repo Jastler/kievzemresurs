@@ -1,6 +1,5 @@
 [DEMO LINK](https://jastler.github.io/kievzemresurs/)
 
-# Museum landing page
 Use BEM and SCSS
 
 - Large screens 2560px
